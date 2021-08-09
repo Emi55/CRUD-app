@@ -1,0 +1,41 @@
+<!-- Form -->
+<form action="/api/users" method="POST" id="add_user">
+  <div class="new_user">
+    <div class="form-group">
+      <label for="task" class="text-light">Task</label>
+      <input type="hidden" name="id" value="" />
+      <input type="text" name="task" value="" placeholder="Meal prep" />
+    </div>
+    <div class="form-group">
+      <label for="Categories" class="text-light">Categories</label>
+      <input type="text" name="Categories" value="" placeholder="Work" />
+    </div>
+    <div class="form-group">
+      <label for="Priority" class="text-light">Priority</label>
+      <div class="radio inline">
+        <input type="radio" id="radio-2" name="Priority" value="Low" />
+        <label for="radio-2" class="radio-label">Low</label>
+      </div>
+      <div class="radio inline">
+        <input type="radio" id="radio-3" name="Priority" value="High" />
+        <label for="radio-3" class="radio-label">High</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="gender" class="text-light">Status</label>
+      <div class="radio inline">
+        <input type="radio" id="radio-4" name="status" value="Active" />
+        <label for="radio-4" class="radio-label">Active</label>
+      </div>
+      <div class="radio inline">
+        <input type="radio" id="radio-5" name="status" value="Inactive" />
+        <label for="radio-5" class="radio-label">Inactive</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn text-dark update">Save</button>
+    </div>
+  </div>
+</form>
